@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <nav class="desktop">
+            <ul>
+                <li class="list" id="Sports" onclick="Search('Sports')">Sports</li>
+                <li class="list" id="Technology" onclick="Search('Technology')">Technology</li>
+                <li class="list" id="Entertainment" onclick="Search('Entertainment')">Entertainment</li>
+                <li class="list" id="Business" onclick="Search('Business')">Business</li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="./assets/—Pngtree—newspaper icon_3568621.jpg" width="96px" alt="logo-image" onclick="reload()">
+        </div>
+        <div class="input-search desktop">
+            <form class="search-bar" id="search-form">
+                <input type="text" placeholder="Search for news" id="searchInput">
+                <img src="./assets/icons8-search-50.png" alt="">
+                <button type="submit"></button>
+            </form>
+        </div>
+
+        <div class="menu-btn">
+            <img src="./assets/icons8-menu-50.png" alt="">
+        </div>
+
+        <!-- mobile nav bar -->
+
+        <div class="mobile-nav hidden">
+            <nav>
+                <ul>
+                    <li onclick="Search('Sports')">Sports</li>
+                    <li onclick="Search('Technology')">Technology</li>
+                    <li onclick="Search('Entertainment')">Entertainment</li>
+                    <li onclick="Search('Business')">Business</li>
+                </ul>
+            </nav>
+            <div class="input-search">
+                <form class="search-bar" id="search-formMobile">
+                    <input type="text" placeholder="Search for news" id="searchInputMobile">
+                    <img src="./assets/icons8-search-50.png" alt="">
+                </form>
+            </div>
+        </div>
+        
+    </header>
+
+    <!-- main -->
+    <main>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
